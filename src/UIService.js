@@ -14,9 +14,10 @@ class UIService{
     }
 
     getFreImage(data){
-        return axios.get('https://us-central1-naga-kopalle2.cloudfunctions.net/visualize_data',
+        return axios.post('https://us-central1-naga-kopalle2.cloudfunctions.net/visualize_data',
         data,{  headers : {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin':'*'
         }})
  
      }
