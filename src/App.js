@@ -61,6 +61,12 @@ submit = (event) =>{
     const obj = this.state.data
     return (
       <div className="App">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
        URL : <input type ="text" name ="url" value ={this.state.url} onChange ={this.handleChange}/>
        <button className ="my-button" onClick={this.submit}>Submit</button> <br></br>
        <div>
@@ -71,7 +77,7 @@ submit = (event) =>{
           return(<p>{keyName} : {obj[keyName]} </p>)
         })}
        </div>
-       
+       <br></br><br></br><br></br><br></br>
        <button className ="my-button" onClick={this.getImage}>Get Image</button> <br></br>
        <img src={this.state.src} alt="Image on Cloud9" width="500" height="600"></img>
       </div>
